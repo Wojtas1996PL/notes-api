@@ -12,7 +12,11 @@ A RESTful service for managing notes and authors, built with Spring Boot. This p
 - **H2 (in-memory database)**
 - **MapStruct** – automatic DTO ↔ entity mapping
 - **Lombok** – boilerplate reduction (getters, constructors, etc.)
-- **Swagger UI (Springdoc v2)** – Interactive API documentation auto-configured via `springdoc-openapi-starter-webmvc-ui:2.8.13`.
+- **Swagger UI (Springdoc v2)** – Interactive API documentation auto-configured via `springdoc-openapi-starter-webmvc-ui:2.8.13`
+- **JUnit 5** – unit and integration testing framework
+- **Mockito** – mocking dependencies for isolated unit tests
+- **Spring Test (MockMvc)** – testing Spring MVC controllers without starting the full server
+- **JSONPath** – expressive assertions for JSON responses in controller tests
 ---
 
 ## 📦 Project Structure
