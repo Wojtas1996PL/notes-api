@@ -7,10 +7,9 @@ import com.mateusz.notes.notes_api.mapper.NoteMapper;
 import com.mateusz.notes.notes_api.model.Author;
 import com.mateusz.notes.notes_api.model.Note;
 import com.mateusz.notes.notes_api.repository.NoteRepository;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor

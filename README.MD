@@ -12,20 +12,17 @@ A RESTful service for managing notes and authors, built with Spring Boot. This p
 - **H2 (in-memory database)**
 - **MapStruct** – automatic DTO ↔ entity mapping
 - **Lombok** – boilerplate reduction (getters, constructors, etc.)
-- **Swagger UI (via WebJar)** – Interactive API documentation powered by Swagger UI 5.28.1, manually integrated without Springdoc.
-
+- **Swagger UI (Springdoc v2)** – Interactive API documentation auto-configured via `springdoc-openapi-starter-webmvc-ui:2.8.13`.
 ---
 
 ## 📦 Project Structure
 
-src/ 
-├── controller/ # REST controllers 
-├── service/ # Business logic 
-├── repository/ # JPA interfaces 
-├── model/ # JPA entities 
-├── dto/ # Data Transfer Objects 
-├── mapper/ # MapStruct mappers
-
+- `controller/` – REST controllers
+- `service/` – Business logic
+- `repository/` – JPA interfaces
+- `model/` – JPA entities
+- `dto/` – Data Transfer Objects
+- `mapper/` – MapStruct mappers
 
 ---
 
@@ -59,5 +56,5 @@ After starting the application, access the interactive API documentation at:
 
 [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
 
-This Swagger UI is manually integrated using the latest WebJar (`swagger-ui:5.28.1`) for full control over versioning and security.
-
+⚠️ Swagger UI is enabled for local development only.  
+This project uses `springdoc-openapi-starter-webmvc-ui:2.8.13` with manually controlled dependencies to minimize security risks.
