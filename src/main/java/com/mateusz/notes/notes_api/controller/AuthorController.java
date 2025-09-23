@@ -21,8 +21,8 @@ public class AuthorController {
     private final AuthorService authorService;
 
     @PostMapping
-    public ResponseEntity<AuthorResponseDto> createAuthor(@Valid @RequestBody AuthorRequestDto dto) {
-        return ResponseEntity.ok(authorService.createAuthor(dto));
+    public AuthorResponseDto createAuthor(@Valid @RequestBody AuthorRequestDto dto) {
+        return authorService.createAuthor(dto);
     }
 
     @GetMapping
@@ -31,7 +31,7 @@ public class AuthorController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<AuthorResponseDto> getAuthorById(@PathVariable Long id) {
-        return ResponseEntity.ok(authorService.getAuthorById(id));
+    public AuthorResponseDto getAuthorById(@PathVariable Long id) {
+        return authorService.getAuthorById(id);
     }
 }
